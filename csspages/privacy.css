@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 .container {
@@ -12,22 +13,24 @@
 
 /*header*/
 header {
-    width: 100%;
-    height: 86px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 40px;
-    margin: 20px auto;
-    border-radius: 18px;
-    background-color: #F0F0F0;
+  width: 100%;
+  height: 86px;  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  margin: 20px auto;
+  border-radius: 18px;
+  background-color: #F0F0F0;
 }
+
 header h1 {
     font-family: "Stack Sans Text", sans-serif;
     font-size: 35px;
     letter-spacing: -2px;
     font-weight: 600;
 }
+
 
 nav ul {
     display: flex;
@@ -42,6 +45,7 @@ nav ul li a {
     color: #000000;
     font-weight: lighter;
 }
+
 /* burger default hidden */
 .burger {
   display: none;
@@ -81,135 +85,87 @@ nav ul li a {
 
 /*main*/
 
-/*section hero*/
+/*hero*/
 
-.hero {
+.hero{
     width: 100%;
-    height: 105vh;
+    height: 30vh;
     display: flex;
-    justify-content: space-between;
+    background-color: #000;
+    color: #fff;
+    border-radius: 22px;
     margin-top: 2rem;
-
-}
-
-.box1 {
-    width: 48.8%;
-    height: 100vh;
-    background-image: url(https://static.wixstatic.com/media/11062b_6c92a1171eb4450d9a6de3318019fb37f000.jpg);
-    background-size: cover;
-    border-radius: 22px;
-    color: white;
     padding: 4rem;
-}
-
-.box1 h1 {
-    font-size: 22px;
-    font-weight: lighter;
-}
-
-.box1 p {
-    font-family: "Stack Sans Text", sans-serif;
-    font-size: 70px;
-    font-weight: 700;
-    letter-spacing: -3px;
-    line-height: 1;
 
 }
 
-.box2 {
-    width: 48.8%;
-    height: 100vh;
+.hero h1 {
+   font-family: "Stack Sans Text", sans-serif; 
+   font-size: 80px;
+   letter-spacing: -2px;
+   font-weight: 700;
+}
+
+/*logo*/
+.logo {
+    width: 100%;
+    height: 140vh;
+    margin-top: 2rem;
     background-color: #F0F0F0;
-    border-radius: 22px;
-    padding-left: 5rem;
-    
-}
-/*contact form*/
-
-
-
-.contact-form {
-   margin-top: 7rem;
-    font-size: 80px;
-    max-width: 400px;
 }
 
-.field {
-  position: relative;
-  margin-bottom: 30px;
+/*legal*/
+
+.legal {
+  gap: 2rem;
+  padding: 4rem;
 }
 
-.field input,
-.field textarea {
-  width: 100%;
-  border: none;
-  border-bottom: 1px solid #bbb;
-  outline: none;
-  font-size: 16px;
-  padding: 10px 0;
-  background: transparent;
+.legal h1 {
+  font-family: "Stack Sans Text", sans-serif; 
+  font-size: 20px;
 }
 
-.field textarea {
-  resize: none;
-  height: 80px;
+.legal p {
+    margin-top: 2rem;
+    font-size: 23px;
 }
 
-.field label {
-  position: absolute;
-  left: 0;
-  top: 10px;
-  font-size: 14px;
-  color: #777;
-  pointer-events: none;
-  transition: 0.3s;
+/*basics*/
+
+.basics {
+  margin-top: -5rem;
+  padding: 4rem;
 }
 
-/* floating effect */
-.field input:focus + label,
-.field input:valid + label,
-.field textarea:focus + label,
-.field textarea:valid + label {
-  top: -10px;
-  font-size: 12px;
-  color: #000;
+.basics h1 {
+  font-family: "Stack Sans Text", sans-serif; 
+  font-size: 20px;
 }
 
-.field input:focus,
-.field textarea:focus {
-  border-bottom: 2px solid #000;
+.basics p {
+    margin-top: 2rem;
+    font-size: 23px;
 }
 
-.contact-form .btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/*include*/
+
+.include {
+  margin-top: -5rem;
+  padding: 4rem;
 }
 
-button {
-  width: 55%;
-  height: 6vh;
-  background: #111;
-  color: #fff;
-  border: 1px solid #111;
-  padding: 10px 25px;
-  cursor: pointer;
-  border-radius: 10px;
+.include h1 {
+  font-family: "Stack Sans Text", sans-serif; 
+  font-size: 20px;
 }
 
-
-
-button:hover {
-    transition: 0.5s;
-    background-color: #fff;
-    color: #000;
+.include p {
+    margin-top: 2rem;
+    font-size: 23px;
 }
-button:hover a {
-    text-decoration: none;
-    color: #000;
-}
+
 /*footer*/
-
 
 footer {
     width: 100%;
@@ -217,7 +173,7 @@ footer {
     background-color: #000;
     color: #fff;
     border-radius: 25px;
-   
+    margin-top: 2rem;
 
     
 }
@@ -261,6 +217,7 @@ footer h1 {
     color: #fff;
     
 }
+
 .footer-right {
     display: flex;
     flex-direction: column;

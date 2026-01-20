@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <title>Document</title>
     <link rel="stylesheet" href="../csspages/work.css">
 </head>
@@ -11,17 +14,23 @@
          <!--header-->
 
         <header>
-            <h1>T. KENSINGTON</h1>
+                <h1>T. KENSINGTON</h1>
+            
+                     
 
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="pages/about.html">About</a></li>
-                    <li><a href="pages/services.html">Services</a></li>
-                    <li><a href="pages/work.html">Our Work</a></li>
-                    <li><a href="../pages/contact.html">Contact</a></li>
-                </ul>
-            </nav>
+                   <div class="burger" id="burger">
+                   <i class="fa-solid fa-bars"></i>
+                  </div>
+
+                <nav id="nav">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../pages/about.html">About</a></li>
+                        <li><a href="../pages/services.html">Services</a></li>
+                        <li><a href="../pages/work.html">Our Work</a></li>
+                        <li><a href="../pages/contact.html">Contact</a></li>
+                    </ul>
+                </nav>
         </header>
         <!--main-->
         <main>
@@ -80,8 +89,30 @@
                     <a href="mailto">info@mysite.com</a>
                     <a href="address">500 Terry Francine St. San<br> Francisco, CA 94158</a>
             </div>
+             <div class="footer-right">
+
+                <a href="../pages/privacy.html">Privacy Policy</a>
+                <a href="../pages/web.html">Accessibility Statement</a>
+
+            </div>
+
+            <div class="footer-right2">
+                 <p class="copyright">
+                  © 2035 by T. Kensington. Powered and secured by Wix
+                </p>
+   
+            </div>
           
       </footer>
     </div>
+     <!--burger-->
+     <script>
+        const burger = document.getElementById("burger");
+        const nav = document.getElementById("nav");
+
+              burger.addEventListener("click", () => {
+              nav.classList.toggle("active");
+             });
+     </script>
 </body>
 </html>

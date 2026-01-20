@@ -15,22 +15,24 @@
 
 /*header*/
 header {
-    width: 100%;
-    height: 86px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 40px;
-    margin: 20px auto;
-    border-radius: 18px;
-    background-color: #F0F0F0;
+  width: 100%;
+  height: 86px;  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  margin: 20px auto;
+  border-radius: 18px;
+  background-color: #F0F0F0;
 }
+
 header h1 {
     font-family: "Stack Sans Text", sans-serif;
     font-size: 35px;
     letter-spacing: -2px;
     font-weight: 600;
 }
+
 
 nav ul {
     display: flex;
@@ -45,6 +47,44 @@ nav ul li a {
     color: #000000;
     font-weight: lighter;
 }
+
+/* burger default hidden */
+.burger {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* mobile styles */
+@media (max-width: 768px) {
+  nav {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #9c9c9c;
+    border-radius: 25px;
+    width: 200px;
+    display: none;
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  nav ul li {
+    margin: 15px 0;
+  }
+
+  nav.active {
+    display: block;
+  }
+
+  .burger {
+    display: block;
+  }
+}
+
 /*main*/
 
 
@@ -294,8 +334,7 @@ nav ul li a {
     justify-content: flex-end;
     background-color: #F0F0F0;
     border-radius: 25px;
-    line-height: ;
-    
+   
 }
 
 
@@ -507,27 +546,94 @@ nav ul li a {
 
 
 
+
 .card2 {
      width: 22%;
     height: 53vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem;
     background-color: #F0F0F0;
     border-radius: 22px;
+}
+
+.smallcard2 {
+    margin-top: 4rem;
+}
+
+.smallcard2 h1 {
+   font-size: 17px;
+   font-weight: 100;
+}
+
+.smallcard2 p {
+    font-family: "Stack Sans Text", sans-serif;
+    font-size: 37px;
+    font-weight: 600;
+    letter-spacing: -2px;
 }
 
 .card3 {
      width: 22%;
     height: 53vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem;
     background-color: #F0F0F0;
     border-radius: 22px;
+}
+
+.smallcard3 {
+    margin-top: 4rem;
+}
+
+.smallcard3 h1 {
+   font-size: 17px;
+   font-weight: 100;
+   
+}
+
+.smallcard3 p {
+    font-family: "Stack Sans Text", sans-serif;
+    font-size: 37px;
+    font-weight: 600;
+    letter-spacing: -2px;
+   
 }
 
 
 .card4 {
      width: 22%;
     height: 53vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem;
     background-color: #F0F0F0;
     border-radius: 22px;
 }
+
+.smallcard4 {
+    margin-top: 4rem;
+}
+
+.smallcard4 h1 {
+   font-size: 17px;
+   font-weight: 100;
+   
+}
+
+.smallcard4 p {
+    font-family: "Stack Sans Text", sans-serif;
+    font-size: 37px;
+    font-weight: 600;
+    letter-spacing: -2px;
+   
+}
+
+
 /*section contact*/
 .contact {
     width: 100%;
@@ -665,7 +771,6 @@ button:hover a {
 
 /*footer*/
 
-
 footer {
     width: 100%;
     height: 60vh;
@@ -717,3 +822,27 @@ footer h1 {
     
 }
 
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    font-size: 30px;
+    margin-top: -14rem;
+    padding-right: 14rem;
+    
+
+}
+
+.footer-right a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-right2 {
+    font-family: "Stack Sans Text", sans-serif;
+    text-align: right;
+    color: #ffffff;
+    padding-right: 5.5rem;
+    margin-top: 4rem;
+    font-size: 16px;
+}

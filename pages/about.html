@@ -3,25 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <title>Document</title>
     <link rel="stylesheet" href="../csspages/about.css">
+   
 </head>
 <body>
     <div class="container">
          <!--header-->
 
-        <header>
-            <h1>T. KENSINGTON</h1>
+         <header>
 
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../pages/about.html">About</a></li>
-                    <li><a href="../pages/services.html">Services</a></li>
-                    <li><a href="../pages/work.html">Our Work</a></li>
-                    <li><a href="../pages/contact.html">Contact</a></li>
-                </ul>
-            </nav>
+            
+                     <h1>T. KENSINGTON</h1>
+
+                   <div class="burger" id="burger">
+                   <i class="fa-solid fa-bars"></i>
+                  </div>
+
+                <nav id="nav">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../pages/about.html">About</a></li>
+                        <li><a href="../pages/services.html">Services</a></li>
+                        <li><a href="../pages/work.html">Our Work</a></li>
+                        <li><a href="../pages/contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+        
         </header>
 
         <!--main-->
@@ -30,10 +42,12 @@
                 <section class="logo">
 
                     
-                     
+                      
+                    
                     <h1>Innovative Strategies</h1>
                     <p>MARKETING<br> SOLUTIONS<br> EXPERTS</p>
 
+                    
                 
                 </section>
                 <!--section hero-->
@@ -42,11 +56,14 @@
                         <div class="title">
 
                             
-
+       
+                            
                         <h1>Standout Projects</h1>
                         <p>LOCAL<br> THRIVE<br> SUCCESS</p>
                         </div>
                         <p>T. Kensington is a dynamic digital agency known<br> for its innovative marketing strategies and<br> impactful solutions. With a dedicated team of<br> creative thinkers and data analysts, we specialize in<br> SEO, PPC, social media, and content marketing to<br> enhance brand visibility and drive conversions.</p>
+
+                        
 
                         
                     </div>
@@ -97,8 +114,33 @@
                     <a href="mailto">info@mysite.com</a>
                     <a href="address">500 Terry Francine St. San<br> Francisco, CA 94158</a>
             </div>
+               <div class="footer-right">
+
+                <a href="../pages/privacy.html">Privacy Policy</a>
+                <a href="../pages/web.html">Accessibility Statement</a>
+
+            </div>
+
+            <div class="footer-right2">
+                 <p class="copyright">
+                  © 2035 by T. Kensington. Powered and secured by Wix
+                </p>
+   
+            </div>
           
       </footer>
     </div>
+
+      <!--burger-->
+     <script>
+        const burger = document.getElementById("burger");
+        const nav = document.getElementById("nav");
+
+              burger.addEventListener("click", () => {
+              nav.classList.toggle("active");
+             });
+     </script>
+      <!--burger-->
+    
 </body>
 </html>

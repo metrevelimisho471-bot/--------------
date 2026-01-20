@@ -1,7 +1,9 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 .container {
@@ -84,177 +86,184 @@ nav ul li a {
 
 /*main*/
 
-/*section hero*/
-
 .hero {
     width: 100%;
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-
-
-.box1 {
-    width: 100%;
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    height: 42vh;
+    background-color: #000;
+    color: #fff;
+    border-radius: 22px;
     margin-top: 2rem;
-    gap: 1rem;
+    padding: 4rem;
+    font-size: 23px;
 }
 
-.box1 h1 {
-    font-size: 25px;
-    font-weight: lighter;
+/*logo*/
+
+.logo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 9rem;
+
 }
 
-.box1 p {
+.logo h1 {
+    font-family: "Stack Sans Text", sans-serif;
+    font-size: 80px;
+    letter-spacing: -5px;
+    line-height: 1.1;
+    font-weight: 700;
+    margin-top: -5rem ;
+    padding-left: 2rem;
+ 
+}
+
+.logo p {
+    font-size: 21px;
+    padding-left: 2rem;
+}
+
+/*web*/
+
+.web {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 9rem;
+    margin-top: -3rem;
+}
+
+.web h1 {
+    font-family: "Stack Sans Text", sans-serif;
+    font-size: 70px;
+    letter-spacing: -5px;
+    line-height: 1.1;
+    font-weight: 700;
+    margin-top: -5rem ;
+    padding-left: 2rem;
+ 
+}
+
+.web p {
+    font-size: 21px;
+    padding-left: 2rem;
+}
+
+/*site*/
+
+.site {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10rem;
+    margin-top:9rem;
+}
+
+.site h1 {
+    font-family: "Stack Sans Text", sans-serif;
+    font-size: 70px;
+    letter-spacing: -5px;
+    line-height: 1.1;
+    font-weight: 700;
+    margin-top: -5rem ;
+    padding-left: 2rem;
+ 
+}
+
+.site p {
+    font-size: 21px;
+    padding-left: 2rem;
+}
+
+.site ul {
+    font-size: 22px;
+    padding-left: 4rem;
+    margin-top: 3rem;
+}
+
+/*partial*/
+
+.partial {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10rem;
+    margin-top:9rem;
+}
+
+.partial h1 {
     font-family: "Stack Sans Text", sans-serif;
     font-size: 65px;
-    font-weight: 750;
-    letter-spacing: -3px;
-    line-height: 1;
-
+    letter-spacing: -5px;
+    font-weight: 700;
+    margin-top: -5rem ;
+    padding-left: 2rem;
+ 
 }
 
-.box2 {
-    font-size: 22px;
-    margin-top: -8.5rem;
+.partial p {
+    font-size: 21px;
+    padding-left: 2rem;
+    margin-top: 2rem;
 }
 
-/*section cards */
-
-.cards {
+/*only*/
+.only {
     width: 100%;
-    height: 150vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
+    padding-left: 10rem;
+    margin-top:9rem;
 }
 
-.card1 {
-    width: 68%;
-    height: 27vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #F0F0F0;
-    border-radius: 20px;
-    margin-top: 4rem;
-    padding: 2rem;
-
-}
-
-.card1 h1 {
+.only h1 {
     font-family: "Stack Sans Text", sans-serif;
-    margin-top: -4rem;
+    font-size: 65px;
+    letter-spacing: -5px;
+    font-weight: 700;
+    margin-top: -5rem ;
+    padding-left: 2rem;
+ 
 }
 
-.card1 p {
-    font-size: 20px;
+.only p {
+    font-size: 21px;
+    padding-left: 2rem;
+    margin-top: 2rem;
 }
 
-.minibox {
-    width: 15%;
-    height: 17vh;
-    background-color: #ffffff;
-    border-radius: 25px;
-    
-}
 
-.card2 {
-    width: 68%;
-    height: 27vh;
+
+/*request*/
+
+.request {
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #F0F0F0;
-    border-radius: 25px;
-    margin-top: 4rem;
-    padding: 2rem;
+    flex-direction: column;
+    padding-left: 10rem;
+    margin-top:9rem;
 }
 
-.minibox2 {
-    width: 15%;
-    height: 17vh;
-    background-color: #ffffff;
-    border-radius: 25px;
-}
-
-.card2 h1 {
+.request h1 {
     font-family: "Stack Sans Text", sans-serif;
-    margin-top: -4rem;
+    font-size: 70px;
+    letter-spacing: -5px;
+    font-weight: 750;
+    margin-top: -5rem ;
+    padding-left: 2rem;
+ 
 }
 
-.card2 p {
-    font-size: 20px;
+.request p {
+    font-size: 21px;
+    padding-left: 2rem;
+    margin-top: 2rem;
 }
 
-.card3 {
-    width: 68%;
-    height: 27vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #F0F0F0;
-    border-radius: 25px;
-    margin-top: 4rem;
-    padding: 2rem;
-}
-
-.minibox3 {
-    width: 15%;
-    height: 17vh;
-    background-color: #ffffff;
-    border-radius: 25px;
-}
-
-.card3 h1 {
-    font-family: "Stack Sans Text", sans-serif;
-    margin-top: -4rem;
-}
-
-.card3 p {
-    font-size: 20px;
-}
-
-.card4 {
-    width: 68%;
-    height: 27vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #F0F0F0;
-    border-radius: 25px;
-    margin-top: 4rem;
-    padding: 2rem;
-}
-
-.minibox4 {
-    width: 15%;
-    height: 17vh;
-    background-color: #ffffff;
-    border-radius: 25px;
-}
-
-.card4 h1 {
-    font-family: "Stack Sans Text", sans-serif;
-    margin-top: -4rem;
-}
-
-.card4 p {
-    font-size: 20px;
+.request ul {
+    font-size: 22px;
+    padding-left: 4rem;
+    margin-top: 0.2rem;
 }
 
 /*footer*/

@@ -19,17 +19,26 @@
         <!--header-->
 
         <header>
-            <h1>T. KENSINGTON</h1>
 
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="pages/about.html">About</a></li>
-                    <li><a href="pages/services.html">Services</a></li>
-                    <li><a href="pages/work.html">Our Work</a></li>
-                    <li><a href="pages/contact.html">Contact</a></li>
-                </ul>
-            </nav>
+            <h1>T. KENSINGTON</h1>
+            
+                     
+
+                   <div class="burger" id="burger">
+                   <i class="fa-solid fa-bars"></i>
+                  </div>
+
+                <nav id="nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pages/about.html">About</a></li>
+                        <li><a href="pages/services.html">Services</a></li>
+                        <li><a href="pages/work.html">Our Work</a></li>
+                        <li><a href="pages/contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+        
         </header>
         <!--main-->
 
@@ -184,18 +193,44 @@
             </section>
             <!--section cards-->
             <section class="cards">
-                
+                 
                     <div class="card1">
                         <div class="smallcard">
+                           
                             <h1>01</h1>
                             <p>SEO</p>
-                        </div>
+                       
                         
                         <p>Search Engine Optimization Strategies</p>
+                       </div>
                     </div>
-                    <div class="card2"></div>
-                    <div class="card3"></div>
-                    <div class="card4"></div>
+
+                    <div class="card2">
+                        <div class="smallcard2">
+                            <h1>02</h1>
+
+                            <p>PPC</p>
+                        </div>
+
+                        <p>
+                            Pay-Per-Click Management<br> Expertise
+                        </p>
+
+                    </div>
+                    <div class="card3">
+                        <div class="smallcard3">
+                            <h1>03</h1>
+                            <p>SOCIAL <br>MEDIA</p>
+                        </div>
+                        <p>Comprehensive Social<br> Media Campaigns</p>
+                    </div>
+                    <div class="card4">
+                        <div class="smallcard4">
+                            <h1>04</h1>
+                            <p>CONTENT<br> MARKETING</p>
+                        </div>
+                        <p>Engaging Content<br> Strategies</p>
+                    </div>
                 
             </section>
             <!--section contact-->
@@ -281,6 +316,23 @@
                     <a href="mailto">info@mysite.com</a>
                     <a href="address">500 Terry Francine St. San<br> Francisco, CA 94158</a>
             </div>
+
+            <div class="footer-right">
+
+                <a href="../pages/privacy.html">Privacy Policy</a>
+                <a href="../pages/web.html">Accessibility Statement</a>
+
+            </div>
+
+            <div class="footer-right2">
+                 <p class="copyright">
+                  © 2035 by T. Kensington. Powered and secured by Wix
+                </p>
+   
+            </div>
+
+
+         
             
             
             </footer>
@@ -289,5 +341,15 @@
     <script>
     AOS.init();
     </script>
+
+    <!--burger-->
+     <script>
+        const burger = document.getElementById("burger");
+        const nav = document.getElementById("nav");
+
+              burger.addEventListener("click", () => {
+              nav.classList.toggle("active");
+             });
+     </script>
  </body>
 </html>
