@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 .container {
@@ -474,9 +475,38 @@ nav ul li a {
 .card1 {
      width: 22%;
     height: 53vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem;
     background-color: #F0F0F0;
     border-radius: 22px;
+    font-size: 20px;
+    
 }
+
+.smallcard {
+    margin-top: 4rem;
+}
+
+.smallcard h1 {
+   font-size: 17px;
+   font-weight: 100;
+}
+
+.smallcard p {
+    font-family: "Stack Sans Text", sans-serif;
+    font-size: 37px;
+    font-weight: 600;
+    letter-spacing: -2px;
+}
+
+
+
+
+
+
+
 .card2 {
      width: 22%;
     height: 53vh;
